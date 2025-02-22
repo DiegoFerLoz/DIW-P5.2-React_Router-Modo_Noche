@@ -20,3 +20,10 @@
   --color-main-header-light: #13151a;
   --color-main-header-dark: #fbfbfc;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+  @apply bg-body-bg-light dark:bg-body-bg-dark transition duration-300;
+}

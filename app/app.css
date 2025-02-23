@@ -19,6 +19,8 @@
   --color-list-bullet-dark: #13151a;
   --color-main-header-light: #13151a;
   --color-main-header-dark: #fbfbfc;
+  --color-profile-bg-light: #EBFEF9;
+  --color-profile-bg-dark: #7cabf9;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

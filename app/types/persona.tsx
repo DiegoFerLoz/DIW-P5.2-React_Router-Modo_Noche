@@ -1,3 +1,4 @@
+// Tipo para representar a la persona del perfil.
 export interface Persona {
     name: string,
     age: string,

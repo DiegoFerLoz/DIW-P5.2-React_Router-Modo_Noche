@@ -19,10 +19,10 @@ export function App() {
     <div className="grid grid-cols-12 gap-4 m-auto w-11/12 font-sans row">
       <Header></Header>
       <Profile persona={persona}></Profile>
-      <Card colStart={5} colEnd={9} title="Bio" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet mauris enim, vel condimentum risus eget rhoncus, vitae. Viverra pulvinar cras eu ac sed nunc dui. Risus pharetra, lacus interdum quam. Egestas aliquam dui at proin. Amet, pharetra, scelerisque molestie nibh porttitor sem malesuada cursus eget. Orci."></Card>
-      <Card colStart={9} colEnd={13} title="Personality" list={["Hardworking", "Smart", "Expressive", "Thoughtful"]}></Card>
-      <Card colStart={5} colEnd={9} title="Pain Points" list={["Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue"]}></Card>
-      <Card colStart={9} colEnd={13} title="Goals" list={["Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue"]}></Card>
+      <Card title="Bio" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet mauris enim, vel condimentum risus eget rhoncus, vitae. Viverra pulvinar cras eu ac sed nunc dui. Risus pharetra, lacus interdum quam. Egestas aliquam dui at proin. Amet, pharetra, scelerisque molestie nibh porttitor sem malesuada cursus eget. Orci."></Card>
+      <Card title="Personality" list={["Hardworking", "Smart", "Expressive", "Thoughtful"]}></Card>
+      <Card title="Pain Points" list={["Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue"]}></Card>
+      <Card title="Goals" list={["Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue", "Lorem ipsum dolor sit amet, fgefw consectetur adipiscing elit. Euchue"]}></Card>
     </div>
       
   );

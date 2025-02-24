@@ -7,7 +7,7 @@ export default function NightToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="py-2 text-gray-900 rounded-lg flex items-center justify-center gap-2 bg-button-bg-light dark:bg-button-bg-dark w-1/12"
+      className="py-2 text-gray-900 rounded-lg flex items-center justify-center gap-2 bg-button-bg-light dark:bg-button-bg-dark w-30"
     >
       {theme === "light" ? (
         <>

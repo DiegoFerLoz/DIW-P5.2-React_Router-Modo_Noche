@@ -21,6 +21,8 @@
   --color-main-header-dark: #fbfbfc;
   --color-profile-bg-light: #EBFEF9;
   --color-profile-bg-dark: #7cabf9;
+
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

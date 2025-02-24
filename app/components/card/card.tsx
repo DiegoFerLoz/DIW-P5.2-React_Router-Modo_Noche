@@ -8,7 +8,7 @@ function Card({title, content="", list=[]}:CardProps) {
   // Componente que recibe un título, y un contenido o lista de elementos. Según lo que reciba, lo mostrará de una forma u otra.
   // Si recibe contenidos y una lista a la vez, mostrará primero el contenido y luego la lista.
   return (
-    <div className={`bg-card-bg-light dark:bg-card-bg-dark rounded-2xl p-6 col-span-4 row-auto`}>
+    <div className={`bg-card-bg-light dark:bg-card-bg-dark rounded-2xl p-6 row-auto col-span-12 md:col-span-6 lg:col-span-4`}>
         <h2 className="text-card-h2-light dark:text-card-h2-dark font-bold text-xl">{title}</h2>
         {/* Si se ha recibido contenido (es distinto de "", su valor por defecto), se muestra. */}
         {content != "" && <p className="text-card-paragraph-light dark:text-card-paragraph-dark text-xl mt-5">{content}</p>}

@@ -13,12 +13,12 @@ function Card({title, content="", list=[]}:CardProps) {
         {/* Si se ha recibido contenido (es distinto de "", su valor por defecto), se muestra. */}
         {content != "" && <p className="text-card-paragraph-light dark:text-card-paragraph-dark text-xl mt-5">{content}</p>}
         {/* Si se ha recibido una lista (si su longitud es mayor que 0, su valor por defecto es una lista vacía), se muestra. */}
-        {list.length > 0 && <ul className="text-card-paragraph-light dark:text-card-paragraph-dark text-xl list-discs mt-5">
+        {list.length > 0 && <ul className="text-card-paragraph-light dark:text-card-paragraph-dark text-xl mt-5">
           {list.map((item, index) => 
             <>
               <li key={index} className="flex items-center">
-                <div className="bg-list-bullet-light dark:bg-list-bullet-dark rounded-2xl py-0.5 w-5 me-2">
-                </div>
+                <hr className="bg-list-bullet-light dark:bg-list-bullet-dark rounded-2xl py-0.5 w-5 me-2">
+                </hr>
                 {item}
               </li>
             </>)}

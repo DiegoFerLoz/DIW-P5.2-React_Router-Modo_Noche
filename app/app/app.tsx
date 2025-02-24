@@ -16,7 +16,7 @@ export function App() {
 
   return (
     // Sistema de grid de 12 columnas. La mejor forma que he visto para dejar un margen a ambos lados es utilizar "w-11/12" con "m-auto"
-    <div className="grid grid-cols-12 gap-4 m-auto w-11/12 font-sans row">
+    <div className="grid grid-cols-12 gap-4 m-auto w-11/12 font-sans row mb-5">
       <Header></Header>
       <Profile persona={persona}></Profile>
       <Card title="Bio" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet mauris enim, vel condimentum risus eget rhoncus, vitae. Viverra pulvinar cras eu ac sed nunc dui. Risus pharetra, lacus interdum quam. Egestas aliquam dui at proin. Amet, pharetra, scelerisque molestie nibh porttitor sem malesuada cursus eget. Orci."></Card>

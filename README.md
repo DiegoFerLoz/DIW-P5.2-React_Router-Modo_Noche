@@ -1,100 +1,41 @@
-# Welcome to React Router!
+# P5.2 DISEÑAR CON TAILWIND Y REACT ROUTER UNA PÁGINA RESPONSIVA Y MODO NOCHE
 
-A modern, production-ready template for building full-stack React applications using React Router.
+- Autor: Diego Fernández Lozano
+- Asignatura: Desarrollo de Interfaces Web
+- Curso: S2DAW
+- Fecha de entrega: 25/02/2025
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 1. Descripción de la práctica.
+Se trata de una práctica donde, siguiendo [un diseño ya realizado en Figma](https://www.figma.com/design/G40Up8aSNvLloXVoi9F1uj/Dark-Mode?node-id=0-18&t=0f4tXEpYE0hBgRAi-1), diseñamos los componentes de la página con React Router de forma responsiva. Adicionalmente, se añade un botón para cambiar del modo "luz" al modo "noche" o al modo "sistema". Esta página se estila con TawilwindCSS.
 
-## Features
+## 2. Desarrollo de la práctica.
+La página se compone principamente de un contenedor grid de 12 columnas, y el resto de componentes seguirán este sistema de columnas.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+El primer componente es el **Header**, un contenedor que ocupa las 12 columnas con un título y un botón que cambia el modo de la página. Dicho botón procede del repositorio de [jeatzr](https://github.com/jeatzr/dark-mode-on-ssr-rr) en GitHub.
 
-## Getting Started
+El siguiente componente es el **Profile**, un contenedor que posee una foto de perfil de la persona, así como sus datos. Se compone a su vez de varias **ProfileLine**, las cuales muestran el nombre del campo junto a su valor.
 
-### Installation
+Y el último componente es la **Card**, un contenedor que muestra un título acompañado de una descripción, o bien una lista de elementos, según el caso.
 
-Install the dependencies:
+## 3. Manual de instalación.
+Tras realizar un pull o clone del proyecto, es necesario tener **node** instalado en el directorio del proyecto para poder ejecutar la aplicación web. Vamos a instalar node desde la línea de comandos.
 
+1. Instalar node y sus dependencias: 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
-
+2. Después se lanza la página con node:
 ```bash
 npm run dev
 ```
+La aplicación web responderá a la dirección `http://localhost:5173`.
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
+3. Opcionalmente se puede crear una build de la aplicación:
 ```bash
 npm run build
 ```
 
-## Deployment
+## 4. Enlaces de interés.
 
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- [Enlace al diseño inicial en Figma](https://www.figma.com/design/G40Up8aSNvLloXVoi9F1uj/Dark-Mode?node-id=0-18&t=0f4tXEpYE0hBgRAi-1)
